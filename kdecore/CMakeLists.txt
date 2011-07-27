@@ -80,4 +80,4 @@ target_link_libraries(smokekdecore
 set_target_properties(smokekdecore PROPERTIES VERSION 3.0.0 SOVERSION 3 )
 install(TARGETS smokekdecore DESTINATION ${LIB_INSTALL_DIR} )
 install(FILES ${CMAKE_CURRENT_SOURCE_DIR}/../kdecore_smoke.h DESTINATION include/smoke)
-install(FILES ${CMAKE_CURRENT_BINARY_DIR}/kde-config.xml DESTINATION share/${SMOKE_GEN_BIN})
+install(FILES ${CMAKE_CURRENT_BINARY_DIR}/kde-config.xml DESTINATION share/smokegen)
