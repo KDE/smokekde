@@ -34,8 +34,10 @@ target_link_libraries(smokekutils
     ${QT_QTGUI_LIBRARY}
     ${KDE4_KDECORE_LIBS}
     ${KDE4_KDEUI_LIBS}
-    ${KDE4_KIO_LIBS}
-    ${KDE4_KUTILS_LIBS}
+    ${KDE4_KEMOTICONS_LIBS}
+    ${KDE4_KIDLETIME_LIBS}
+    ${KDE4_KCMUTILS_LIBS}
+    ${KDE4_KPRINTUTILS_LIBS}
     smokekdeui
     ${SMOKE_QTCORE_LIBRARY}
     ${SMOKE_BASE_LIBRARY}
