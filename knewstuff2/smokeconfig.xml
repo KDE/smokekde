@@ -42,9 +42,10 @@
         <name>.*i18n.*</name>
     </functions>
     <classList>
+        <class>KNS::Author</class>
         <class>KNS::Button</class>
-        <class>KNS::CoreEngine</class>
-        <class>KNS::ProviderLoader</class>
-        <class>KNS::UploadDialog</class>
+        <class>KNS::Engine</class>
+        <class>KNS::Entry</class>
+        <class>KNS::KTranslatable</class>
     </classList>
 </config>
