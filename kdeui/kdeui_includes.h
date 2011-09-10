@@ -132,7 +132,11 @@
 #include <kdatetimewidget.h>
 #include <kdatewidget.h>
 #include <kdialogbuttonbox.h>
+
+#ifndef KDE_NO_DEPRECATED
 #include <keditlistbox.h>
+#endif
+
 #include <kfadewidgeteffect.h>
 #include <khbox.h>
 #include <khelpmenu.h>
