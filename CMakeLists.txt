@@ -20,6 +20,11 @@ include_directories(${CMAKE_CURRENT_SOURCE_DIR} ${SMOKE_INCLUDE_DIR})
 add_definitions (${QT_DEFINITIONS} ${KDE4_DEFINITIONS} -DQT3_SUPPORT)
 include_directories (${CMAKE_SOURCE_DIR} ${CMAKE_BINARY_DIR} ${KDE4_INCLUDES} )
 
+## disable deprecation waringins
+if(CMAKE_COMPILER_IS_GNUCXX)
+    set(CMAKE_CXX_FLAGS "-Wno-deprecated-declarations")
+endif()
+
 macro_optional_find_package(LibAttica)
 macro_log_feature(LIBATTICA_FOUND "libattica" "LibAttica" "http://www.kde.org" FALSE "" "Needed to compile libattica bindings")
 
