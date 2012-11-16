@@ -17,6 +17,11 @@
 #include <okular/core/utils.h>
 #include <okular/core/version.h>
 #include <okular/core/fileprinter.h>
+
+#if OKULAR_IS_VERSION(0,15,70)
+#include <okular/core/tile.h>
+#endif
+
 #include <okular/interfaces/configinterface.h>
 #include <okular/interfaces/guiinterface.h>
 #include <okular/interfaces/printinterface.h>
