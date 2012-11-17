@@ -81,6 +81,7 @@
         <class>Okular::TextDocumentGenerator</class>
         <class>Okular::TextEntity</class>
         <class>Okular::TextPage</class>
+        <class>Okular::Tile</class>
         <class>Okular::Utils</class>
         <class>Okular::VisiblePageRect</class>
         <class>Okular::Window</class>
