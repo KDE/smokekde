@@ -10,7 +10,11 @@ set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} ${SMOKE_CMAKE_MODULE_DIR})
 include(MacroLibrary)
 include(MacroOptionalAddBindings)
 
-set(QTDEFINES_FILE ${SMOKE_GEN_SHARED}/qtdefines CACHE FILEPATH "Path to the qtdefines file")
+find_path(QTDEFINES_FILE
+	  qtdefines
+          PATH_SUFFIXES share/smokegen
+	  DOC "Path to the qtdefines file")
+
 if(NOT EXISTS ${QTDEFINES_FILE})
     message(FATAL_ERROR "${QTDEFINES_FILE} doesn't exist. Please adjust the path manually")
 endif(NOT EXISTS ${QTDEFINES_FILE})
