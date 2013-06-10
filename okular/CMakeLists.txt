@@ -1,5 +1,5 @@
 
-include_directories( ${CMAKE_SOURCE_DIR}/smoke )
+include_directories( ${CMAKE_SOURCE_DIR}/smoke ${OKULAR_INCLUDE_DIR} )
 
 configure_file(config.xml.cmake ${CMAKE_CURRENT_BINARY_DIR}/config.xml @ONLY)
 
@@ -50,9 +50,9 @@ target_link_libraries(smokeokular
     ${KDE4_KDECORE_LIBS} 
     ${KDE4_KDEUI_LIBS}
     ${KDE4_KIO_LIBS} 
-    okularcore
+    ${OKULAR_CORE_LIBRARY}
     ${SMOKE_QTCORE_LIBRARY}
-    smokeqtxml
+    ${SMOKE_QTXML_LIBRARY}
     smokekdeui
     ${SMOKE_BASE_LIBRARY}
 )
