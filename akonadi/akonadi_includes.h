@@ -98,6 +98,7 @@
 #include <akonadi/session.h>
 #include <akonadi/standardactionmanager.h>
 #include <akonadi/statisticsproxymodel.h>
+#include <akonadi/tagfetchscope.h>
 #include <akonadi/transactionjobs.h>
 #include <akonadi/transactionsequence.h>
 #include <akonadi/transportresourcebase.h>
