@@ -42,7 +42,8 @@ IF(CMAKE_CXX_FLAGS MATCHES "-fvisibility")
 ENDIF(CMAKE_CXX_FLAGS MATCHES "-fvisibility")
 add_library(smokesoprano SHARED ${smokesoprano_LIB_SRCS})
 
-target_link_libraries(smokesoprano ${SMOKE_QTCORE_LIBRARY} ${QT_QTCORE_LIBRARY} ${SOPRANO_LIBRARIES} ${SMOKE_BASE_LIBRARY})
+target_link_libraries(smokesoprano LINK_PRIVATE
+   ${SMOKE_QTCORE_LIBRARY} ${QT_QTCORE_LIBRARY} ${SOPRANO_LIBRARIES} ${SMOKE_BASE_LIBRARY})
 
 set_target_properties(smokesoprano PROPERTIES VERSION 3.0.0 SOVERSION 3 )
 

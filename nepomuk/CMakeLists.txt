@@ -43,7 +43,7 @@ set(smokenepomuk_LIB_SRCS ${CMAKE_CURRENT_BINARY_DIR}/smokedata.cpp
 
 kde4_add_library(smokenepomuk SHARED ${smokenepomuk_LIB_SRCS})
 
-target_link_libraries(smokenepomuk 
+target_link_libraries(smokenepomuk  LINK_PRIVATE
     ${NEPOMUK_LIBRARIES}
     ${SOPRANO_LIBRARIES}
     ${KDE4_KDECORE_LIBS}

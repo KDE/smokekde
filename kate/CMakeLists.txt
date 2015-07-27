@@ -42,7 +42,7 @@ include_directories( ${QT_INCLUDES} ${KDE4_INCLUDES} ${CMAKE_CURRENT_SOURCE_DIR}
 
 kde4_add_library(smokekate SHARED ${smokekate_LIB_SRCS})
 
-target_link_libraries(smokekate
+target_link_libraries(smokekate LINK_PRIVATE
     ${QT_QTCORE_LIBRARY}
     ${QT_QTGUI_LIBRARY}
     ${KDE4_KDECORE_LIBS}

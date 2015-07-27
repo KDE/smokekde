@@ -49,7 +49,7 @@ ENDIF(CMAKE_CXX_FLAGS MATCHES "-fvisibility")
 
 kde4_add_library(smokesolid SHARED ${smokesolid_LIB_SRCS})
 
-target_link_libraries(smokesolid 
+target_link_libraries(smokesolid  LINK_PRIVATE
     ${QT_QTCORE_LIBRARY} 
     ${QT_QTNETWORK_LIBRARY} 
     ${QT_QTGUI_LIBRARY} 

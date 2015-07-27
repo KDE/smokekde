@@ -41,7 +41,7 @@ ENDIF(CMAKE_CXX_FLAGS MATCHES "-fvisibility")
 
 kde4_add_library(smokeplasma SHARED ${smokeplasma_LIB_SRCS})
 
-target_link_libraries(smokeplasma 
+target_link_libraries(smokeplasma  LINK_PRIVATE
     ${KDE4_KDEUI_LIBS}
     ${KDE4_PLASMA_LIBS}
     smokekdecore
@@ -51,7 +51,7 @@ target_link_libraries(smokeplasma
 )
 
 if(KDE_VERSION VERSION_LESS "4.2.0")
-    target_link_libraries(smokeplasma 
+    target_link_libraries(smokeplasma  LINK_PRIVATE
         ${PLASMA_LIBS}
     )
 endif(KDE_VERSION VERSION_LESS "4.2.0")

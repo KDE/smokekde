@@ -25,11 +25,10 @@ set(smokenepomukquery_LIB_SRCS ${CMAKE_CURRENT_BINARY_DIR}/smokedata.cpp
 
 kde4_add_library(smokenepomukquery SHARED ${smokenepomukquery_LIB_SRCS})
 
-target_link_libraries(smokenepomukquery 
+target_link_libraries(smokenepomukquery  LINK_PRIVATE
     ${NEPOMUK_LIBRARIES}
     ${NEPOMUK_QUERY_LIBRARIES}
     ${SOPRANO_LIBRARIES}
-    nepomukquery
     ${KDE4_KDECORE_LIBS}
     ${QT_QTGUI_LIBRARY}
     ${SMOKE_QTCORE_LIBRARY}

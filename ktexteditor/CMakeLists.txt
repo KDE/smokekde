@@ -42,7 +42,7 @@ ENDIF(CMAKE_CXX_FLAGS MATCHES "-fvisibility")
 
 kde4_add_library(smokektexteditor SHARED ${smokektexteditor_LIB_SRCS})
 
-target_link_libraries(smokektexteditor 
+target_link_libraries(smokektexteditor  LINK_PRIVATE
     ${QT_QTNETWORK_LIBRARY} 
     ${QT_QTSQL_LIBRARY} 
     ${QT_QTOPENGL_LIBRARY} 

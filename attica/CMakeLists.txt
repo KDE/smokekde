@@ -24,7 +24,7 @@ set(smokeattica_LIB_SRCS ${CMAKE_CURRENT_BINARY_DIR}/smokedata.cpp
 
 kde4_add_library(smokeattica SHARED ${smokeattica_LIB_SRCS})
 
-target_link_libraries(smokeattica 
+target_link_libraries(smokeattica  LINK_PRIVATE
     ${QT_QTCORE_LIBRARY}
     ${QT_QTNETWORK_LIBRARY}
     ${LIBATTICA_LIBRARIES}

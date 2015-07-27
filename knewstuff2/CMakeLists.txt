@@ -28,7 +28,7 @@ kde4_add_library(smokeknewstuff2 SHARED ${smokeknewstuff2_LIB_SRCS})
 
 # add_dependencies(smokeknewstuff2 smokeqt)
 
-target_link_libraries(smokeknewstuff2
+target_link_libraries(smokeknewstuff2 LINK_PRIVATE
     ${QT_QTCORE_LIBRARY}
     ${QT_QTXML_LIBRARY}
     ${QT_QTGUI_LIBRARY}

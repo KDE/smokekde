@@ -28,7 +28,7 @@ kde4_add_library(smokekutils SHARED ${smokekutils_LIB_SRCS})
 
 # add_dependencies(smokekutils smokeqt)
 
-target_link_libraries(smokekutils
+target_link_libraries(smokekutils LINK_PRIVATE
     ${QT_QTCORE_LIBRARY}
     ${QT_QTXML_LIBRARY}
     ${QT_QTGUI_LIBRARY}

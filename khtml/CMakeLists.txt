@@ -65,7 +65,7 @@ kde4_add_library(smokekhtml SHARED ${smokekhtml_LIB_SRCS})
 
 add_dependencies(smokekhtml ${SMOKE_QTCORE_LIBRARY} smokekdecore)
 
-target_link_libraries(smokekhtml 
+target_link_libraries(smokekhtml  LINK_PRIVATE
     ${QT_QTCORE_LIBRARY} 
     ${QT_QTGUI_LIBRARY}
     ${KDE4_KDECORE_LIBS} 

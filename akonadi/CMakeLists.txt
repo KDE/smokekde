@@ -42,7 +42,7 @@ ENDIF(CMAKE_CXX_FLAGS MATCHES "-fvisibility")
 
 kde4_add_library(smokeakonadi SHARED ${smokeakonadi_LIB_SRCS})
 
-target_link_libraries(smokeakonadi 
+target_link_libraries(smokeakonadi  LINK_PRIVATE
     ${KDEPIMLIBS_AKONADI_LIBS} 
     ${KDEPIMLIBS_AKONADI_CONTACT_LIBS}
     ${KDEPIMLIBS_AKONADI_KABC_LIBS}

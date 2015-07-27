@@ -25,7 +25,7 @@ IF(CMAKE_CXX_FLAGS MATCHES "-fvisibility")
 ENDIF(CMAKE_CXX_FLAGS MATCHES "-fvisibility")
 add_library(smokesopranoserver SHARED ${smokesopranoserver_LIB_SRCS})
 
-target_link_libraries(  smokesopranoserver
+target_link_libraries(  smokesopranoserver LINK_PRIVATE
                             ${SMOKE_QTCORE_LIBRARY}
                             smokesoprano
                             ${QT_QTCORE_LIBRARY} 

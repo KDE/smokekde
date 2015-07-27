@@ -44,7 +44,7 @@ ENDIF(CMAKE_CXX_FLAGS MATCHES "-fvisibility")
 
 kde4_add_library(smokeokular SHARED ${smokeokular_LIB_SRCS})
 
-target_link_libraries(smokeokular 
+target_link_libraries(smokeokular  LINK_PRIVATE
     ${QT_CORE_LIBRARY} 
     ${QT_GUI_LIBRARY} 
     ${KDE4_KDECORE_LIBS} 

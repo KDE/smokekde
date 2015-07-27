@@ -64,7 +64,7 @@ include_directories( ${QT_INCLUDES} ${KDE4_INCLUDES} ${CMAKE_CURRENT_SOURCE_DIR}
 
 kde4_add_library(smokekio SHARED ${smokekio_LIB_SRCS})
 
-target_link_libraries(smokekio
+target_link_libraries(smokekio LINK_PRIVATE
     ${QT_QTCORE_LIBRARY}
     ${QT_QTNETWORK_LIBRARY}
     ${QT_QTDBUS_LIBRARY}
