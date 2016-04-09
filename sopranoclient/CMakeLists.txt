@@ -30,7 +30,7 @@ target_link_libraries(  smokesopranoclient  LINK_PRIVATE
                             smokesoprano 
                             ${QT_QTCORE_LIBRARY} 
                             ${QT_QTNETWORK_LIBRARY} 
-                            sopranoclient 
+                            ${SOPRANO_CLIENT_LIBRARIES}
                             ${SOPRANO_LIBRARIES}
                             ${SMOKE_BASE_LIBRARY}
 )

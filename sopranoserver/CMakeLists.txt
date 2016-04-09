@@ -29,7 +29,7 @@ target_link_libraries(  smokesopranoserver LINK_PRIVATE
                             ${SMOKE_QTCORE_LIBRARY}
                             smokesoprano
                             ${QT_QTCORE_LIBRARY} 
-                            sopranoserver 
+                            ${SOPRANO_SERVER_LIBRARIES}
                             ${SOPRANO_LIBRARIES}
                             ${SMOKE_BASE_LIBRARY})
 
